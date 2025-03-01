@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Self</title>
+    <style>
+        .background {
+            background-image: url('beige heart aura.jpeg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            font-family: 'Garamond', sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            height: 500vh;
+        }
+        .me {
+            position: relative;
+            width: 800px;
+            height: 500px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        
+        .hover-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            border-radius: 10px;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:#b08968;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 10px;
+        }
+        .overlay-text {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        
+        .me:hover .hover-image,
+        .computers:hover .hover-image,
+        .core:hover .hover-image {
+            transform: scale(1.1);
+        }
+        
+        .me:hover .overlay,
+        .computers:hover .overlay,
+        .core:hover .overlay {
+            opacity: 1; 
+        }
+        
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            color: #ffffff;
+            font-family: 'Lucida Handwriting', sans-serif;
+            margin-top: 1px;
+            background: #7f5539;
+            border-radius: 10px;
+            margin-right: 20px; 
+            margin-left: 20px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px; 
+        }
+
+        .intro {
+            max-width: 500px; 
+            font-family:'Lucida', sans-serif;
+            font-size: 40px;
+            color: #ffffff;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 20px; 
+        }
+
+        .computers, .core {
+            margin: 10px;
+            position: relative;
+            width: 200px;
+            height: 200px; 
+            overflow: hidden;
+            border-radius: 10px;
+            margin-left: 4opx;
+        }
+
+        .hover-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .why {
+            font-family:'Lucida', sans-serif;
+            font-size: 50px;
+            color: #ffffff;
+            align-content: justify;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body class="background">
+    <h1>ABOUT ME</h1>
+    <div class="content">
+        <div class="me">
+            <img src="mee2.jpg" alt="Meee" class="hover-image">
+            <div class="overlay">
+                <p class="overlay-text">Hello, I'm Yaa Achama Obeng-Darko</p>
+            </div>
+        </div>
+        <div class="intro">
+            <h1>My Bio</h1>
+            <p>Hi, I am Yaa Achama Obeng-Darko a first year student at the Kwame Nkrumah University of Science and Technology, studying Computer Engineering. I am also friendly, creative, and a team player. I have strong problem-solving, leadership, and communication skills.</p>
+        </div>
+    </div>
+    <div class="Computer">
+        <h1>Why I chose Computer Engineering</h1>
+        <div class="image-row">
+            <div class="computers">
+                <img src="computer (1).jpeg" alt="Computer" class="hover-image">
+                <div class="overlay">
+                    <p class="overlay-text">Computer</p>
+                </div>
+            </div>
+            <div class="core">
+                <img src="core.jpeg" alt="Engineering" class="hover-image">
+                <div class="overlay">
+                    <p class="overlay-text">Engineering</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="why">
+            <p>Computer Engineering is a field that deals with computers and the structures behind them. It is a very detailed and intersesting course. I fell in love with computer Engineering the moment I heard about how this course has help us humans world wide. I chose computer engineering to also build computers to help people too.</p>
+        </div>
+</body>
+</html>
